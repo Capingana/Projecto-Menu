@@ -53,12 +53,17 @@ menu > ul > li > a:hover {
   margin: 0 auto;
   padding: 10px;
   max-width: 900px;
-
 }
-div.dentro{
-  overflow-x: auto;
-}
-caption{
+/* div.dentro {
+   overflow-x: auto;
+} */
+ p{
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 30px;
+  margin-top: 10px;
+ }
+caption {
   padding: 10px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -68,9 +73,15 @@ caption{
 table {
   border-collapse: collapse;
   width: 100%;
+  position: relative;
 }
-
-tr,
+thead > tr > th {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  font-weight: bold;
+  position: sticky;
+  top: -1px;
+}
 td,
 th {
   border: 1px solid black;
@@ -79,13 +90,8 @@ th {
 tbody > tr > td {
   text-align: center;
 }
-thead > tr > th {
-  background-color: rgb(39, 39, 39);
-  color: white;
-  font-weight: bold;
-}
 
-tbody >tr:nth-child(2n){
+tbody > tr:nth-child(2n) {
   background-color: rgb(179, 179, 179);
 }
 @media screen and (min-width: 768px) {
